@@ -11,7 +11,7 @@ Timer::~Timer() {
     //get the current time
     end = {std::chrono::high_resolution_clock::now()};
 
-    //get the difference and thus the tick count
+    //computer the difference between start and end, and thus the tick count
     std::chrono::duration<double> duration(end-start);
 
     //print the duration in milliseconds
